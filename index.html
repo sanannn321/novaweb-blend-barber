@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BLEND Barber Studio | Premium Haircuts, Fades &amp; Men's Grooming</title>
+<meta name="description" content="BLEND Barber Studio is a fictional premium barbershop demo offering classic cuts, skin fades, beard styling and full grooming. Book your appointment on WhatsApp.">
+<meta property="og:title" content="BLEND Barber Studio">
+<meta property="og:description" content="Your Style. Your Signature. Premium barbering and men's grooming.">
+<meta name="theme-color" content="#1d1b19">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%231d1b19'/%3E%3Ctext x='50' y='70' font-size='62' text-anchor='middle' fill='%23c08a4f' font-family='serif' font-weight='bold'%3EB%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,500;0,700;0,800;1,500&amp;family=Instrument+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="header" id="header">
+  <nav class="nav" aria-label="Main navigation">
+    <a href="#home" class="logo" aria-label="BLEND Barber Studio, home">BLEND</a>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu"><span></span><span></span><span></span></button>
+    <ul class="links" id="nav-links">
+      <li><a href="#about">Studio</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#barbers">Barbers</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#booking" class="btn btn-sm">Book Appointment</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+<section class="hero" id="home">
+  <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1600&q=70" alt="Barber giving a precision haircut in the studio" fetchpriority="high">
+  <div class="hero-shade"></div>
+  <div class="wrap hero-copy">
+    <h1>Your Style.<br>Your Signature.</h1>
+    <p>Precision cuts, clean fades and considered grooming from barbers who take their time. One chair, one client, no rush.</p>
+    <div class="actions">
+      <a href="#booking" class="btn">Book Appointment</a>
+      <a href="#services" class="btn btn-ghost">View Services</a>
+    </div>
+  </div>
+</section>
+
+<section class="section ivory" id="about">
+  <div class="wrap about">
+    <div class="about-img reveal">
+      <img class="a1" src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=800&q=70" alt="Barber trimming a client's hair" loading="lazy">
+      <img class="a2" src="https://images.unsplash.com/photo-1532710093739-9470acff878f?auto=format&fit=crop&w=600&q=70" alt="Interior of the BLEND studio" loading="lazy">
+    </div>
+    <div class="about-text reveal">
+      <h2>A barbershop that respects your time and your head</h2>
+      <p class="lead">BLEND began with a simple rule: every cut is booked long enough to be done properly.</p>
+      <p>We pair traditional barbering, hot towels, straight razors and patient scissor work, with a calm, modern room. No loud queues, no assembly-line fades.</p>
+      <p>Every appointment starts with a short consultation about your hair type, your routine and how you want to look on Monday morning. Then we get to work.</p>
+      <p class="note">BLEND Barber Studio is a fictional business created for a portfolio demonstration.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section dark" id="services">
+  <div class="wrap">
+    <div class="head reveal">
+      <h2>Services and prices</h2>
+      <p>Illustrative prices in USD for demonstration only.</p>
+    </div>
+    <div class="chips reveal" role="group" aria-label="Filter services">
+      <button class="chip active" data-filter="all" aria-pressed="true">All</button>
+      <button class="chip" data-filter="hair" aria-pressed="false">Hair</button>
+      <button class="chip" data-filter="beard" aria-pressed="false">Beard</button>
+      <button class="chip" data-filter="grooming" aria-pressed="false">Grooming</button>
+    </div>
+    <ul class="ledger" id="ledger">
+      <li data-cat="hair">
+        <div class="l-main"><h3>Classic Haircut</h3><p>Consultation, scissor and clipper work, neck shave and styling. About 45 minutes.</p></div>
+        <span class="l-price">$35</span><button class="btn btn-sm btn-ghost book-btn" data-service="Classic Haircut" aria-label="Book Classic Haircut">Book</button>
+      </li>
+      <li data-cat="hair">
+        <div class="l-main"><h3>Skin Fade</h3><p>Seamless blend down to the skin, finished with a razor line-up. About 50 minutes.</p></div>
+        <span class="l-price">$40</span><button class="btn btn-sm btn-ghost book-btn" data-service="Skin Fade" aria-label="Book Skin Fade">Book</button>
+      </li>
+      <li data-cat="beard">
+        <div class="l-main"><h3>Beard Styling</h3><p>Shaping, trimming and a hot towel finish with beard oil. About 30 minutes.</p></div>
+        <span class="l-price">$25</span><button class="btn btn-sm btn-ghost book-btn" data-service="Beard Styling" aria-label="Book Beard Styling">Book</button>
+      </li>
+      <li data-cat="hair">
+        <div class="l-main"><h3>Hair Wash</h3><p>Deep-cleanse shampoo, scalp massage and conditioning rinse. About 20 minutes.</p></div>
+        <span class="l-price">$15</span><button class="btn btn-sm btn-ghost book-btn" data-service="Hair Wash" aria-label="Book Hair Wash">Book</button>
+      </li>
+      <li data-cat="grooming">
+        <div class="l-main"><h3>Premium Grooming</h3><p>Haircut, beard sculpt, hot towel shave, facial cleanse and styling. About 90 minutes.</p></div>
+        <span class="l-price">$85</span><button class="btn btn-sm btn-ghost book-btn" data-service="Premium Grooming" aria-label="Book Premium Grooming">Book</button>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="section beige" id="barbers">
+  <div class="wrap">
+    <div class="head reveal"><h2>Meet our barbers</h2><p>Three chairs, three specialists. Fictional team members for this demo.</p></div>
+    <div class="team">
+      <article class="member reveal">
+        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=70" alt="Portrait of Marcus Hale, master barber" loading="lazy">
+        <div><h3>Marcus Hale</h3><p class="role">Founder and master barber</p><p>Fifteen years behind the chair. Known for sharp tapers and classic scissor cuts.</p></div>
+      </article>
+      <article class="member reveal">
+        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=70" alt="Portrait of Daniel Reyes, fade specialist" loading="lazy">
+        <div><h3>Daniel Reyes</h3><p class="role">Fade specialist</p><p>Skin fades, textured crops and detailed line-ups with a razor-clean finish.</p></div>
+      </article>
+      <article class="member reveal">
+        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=600&q=70" alt="Portrait of Elias Moreau, beard and grooming expert" loading="lazy">
+        <div><h3>Elias Moreau</h3><p class="role">Beard and grooming expert</p><p>Hot towel shaves, beard sculpting and our full premium grooming ritual.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section ivory" id="gallery">
+  <div class="wrap">
+    <div class="head reveal"><h2>Inside the studio</h2><p>Select any photo to view it larger.</p></div>
+    <div class="mosaic">
+      <button class="g-item big reveal" type="button"><img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=800&q=70" alt="Barber styling a client's hair" loading="lazy"><span>Precision work</span></button>
+      <button class="g-item reveal" type="button"><img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=600&q=70" alt="Beard being trimmed" loading="lazy"><span>Beard sculpting</span></button>
+      <button class="g-item reveal" type="button"><img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=600&q=70" alt="Barber at work in the studio" loading="lazy"><span>The chair</span></button>
+      <button class="g-item reveal" type="button"><img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=600&q=70" alt="Fresh haircut detail" loading="lazy"><span>Fresh finish</span></button>
+      <button class="g-item big reveal" type="button"><img src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?auto=format&fit=crop&w=800&q=70" alt="Barber chairs lined up" loading="lazy"><span>Studio floor</span></button>
+      <button class="g-item reveal" type="button"><img src="https://images.unsplash.com/photo-1493256338651-d82f7acb2b38?auto=format&fit=crop&w=600&q=70" alt="Barbershop interior details" loading="lazy"><span>Details</span></button>
+    </div>
+  </div>
+</section>
+
+<section class="section beige" id="reviews">
+  <div class="wrap">
+    <div class="head reveal">
+      <h2>What clients say</h2>
+      <p>The reviews below are fictional sample content written for this portfolio demo.</p>
+    </div>
+    <div class="quotes">
+      <figure class="quote reveal"><blockquote>My fade has never held its shape this long. Daniel takes his time and it shows.</blockquote><figcaption>Sample review by James T.</figcaption></figure>
+      <figure class="quote reveal"><blockquote>The premium grooming session is the most relaxed hour of my month. Hot towel included.</blockquote><figcaption>Sample review by Omar K.</figcaption></figure>
+      <figure class="quote reveal"><blockquote>Marcus listened, then gave me the cut I didn't know how to ask for. Booking again.</blockquote><figcaption>Sample review by Luca B.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="section dark" id="booking">
+  <div class="wrap res">
+    <div class="res-intro reveal">
+      <h2>Book your appointment</h2>
+      <p>Choose a service and a time. Your request opens in WhatsApp and we confirm there, usually within the hour.</p>
+    </div>
+    <form id="book-form" class="form reveal" novalidate>
+      <div class="field"><label for="name">Full name</label><input id="name" name="name" type="text" autocomplete="name" required aria-describedby="name-err"><small class="err" id="name-err" role="alert"></small></div>
+      <div class="field"><label for="phone">Phone number</label><input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+1 555 013 7788" required aria-describedby="phone-err"><small class="err" id="phone-err" role="alert"></small></div>
+      <div class="field"><label for="service">Service</label>
+        <select id="service" name="service" required aria-describedby="service-err">
+          <option value="">Choose a service</option>
+          <option>Classic Haircut</option><option>Skin Fade</option><option>Beard Styling</option><option>Hair Wash</option><option>Premium Grooming</option>
+        </select><small class="err" id="service-err" role="alert"></small></div>
+      <div class="row">
+        <div class="field"><label for="date">Preferred date</label><input id="date" name="date" type="date" required aria-describedby="date-err"><small class="err" id="date-err" role="alert"></small></div>
+        <div class="field"><label for="time">Preferred time</label><select id="time" name="time" required aria-describedby="time-err"><option value="">Choose a date first</option></select><small class="err" id="time-err" role="alert"></small></div>
+      </div>
+      <button type="submit" class="btn">Send via WhatsApp</button>
+      <p class="status" id="status" role="status"></p>
+    </form>
+  </div>
+</section>
+
+<section class="section ivory" id="contact">
+  <div class="wrap info">
+    <div class="reveal">
+      <h2>Opening hours</h2>
+      <dl class="hours">
+        <div><dt>Monday to Friday</dt><dd>9:00 am to 7:00 pm</dd></div>
+        <div><dt>Saturday</dt><dd>9:00 am to 5:00 pm</dd></div>
+        <div><dt>Sunday</dt><dd>Closed</dd></div>
+      </dl>
+    </div>
+    <div class="reveal">
+      <h2>Visit the studio</h2>
+      <address>
+        48 Copper Street<br>Riverside Quarter<br>Sample City, 20001<br><br>
+        <a href="tel:+15550137788">+1 555 013 7788</a><br>
+        <a href="mailto:book@blend-demo.example">book@blend-demo.example</a>
+      </address>
+      <div class="actions">
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Riverside+Quarter+Sample+City" target="_blank" rel="noopener">Get directions</a>
+        <a class="btn btn-line" href="tel:+15550137788">Call the studio</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap foot">
+    <p class="mark" aria-hidden="true">BLEND</p>
+    <div class="foot-grid">
+      <p>Barbering and grooming for men who notice the details.<br>Fictional business for portfolio use.</p>
+      <nav aria-label="Footer navigation"><ul>
+        <li><a href="#about">Studio</a></li><li><a href="#services">Services</a></li><li><a href="#barbers">Barbers</a></li>
+        <li><a href="#gallery">Gallery</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#booking">Book</a></li>
+      </ul></nav>
+      <ul class="social">
+        <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="https://tiktok.com" target="_blank" rel="noopener">TikTok</a></li>
+      </ul>
+    </div>
+    <p class="copy">&copy; <span id="year">2026</span> BLEND Barber Studio. Demo project, all content is fictional.</p>
+  </div>
+</footer>
+
+<dialog id="lightbox" class="lightbox" aria-label="Image viewer">
+  <button class="lb-btn lb-close" id="lb-close" aria-label="Close image">&times;</button>
+  <button class="lb-btn lb-prev" id="lb-prev" aria-label="Previous image">&#8249;</button>
+  <figure><img id="lb-img" src="" alt=""><figcaption id="lb-cap"></figcaption></figure>
+  <button class="lb-btn lb-next" id="lb-next" aria-label="Next image">&#8250;</button>
+</dialog>
+<script src="script.js"></script>
+</body>
+</html>
